@@ -39,7 +39,7 @@ function Contact() {
 
     try {
         const token = await getAccessTokenSilently();
-      await fetch('http://localhost:5176/users/contact', {
+      await fetch('https://jachacks2025.onrender.com/users/contact', {
         method: 'POST',
         headers: { 
             'Authorization': `Bearer ${token}`,

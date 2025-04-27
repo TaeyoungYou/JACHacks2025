@@ -1,6 +1,6 @@
 export const handleDatabase = async () => {
     try {
-        const response = await fetch('http://localhost:5176/animals', {
+        const response = await fetch('https://jachacks2025.onrender.com/animals', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
