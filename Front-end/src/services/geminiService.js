@@ -1,6 +1,9 @@
 import { handleDatabase } from '../data/handleDatabase.js';
 
-const API_KEY = 'AIzaSyDdrmCTZ1dRW6dLlR0X-qImb-t9KKqpjfc'; // replace with env later
+
+console.log(import.meta.env.VITE_GEMINI_API_KEY)
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+console.log('API_LOG:',API_KEY);
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
 export async function analyzeVibe(petDescription) {

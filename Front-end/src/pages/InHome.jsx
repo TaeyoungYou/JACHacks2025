@@ -60,7 +60,7 @@ function InHome() {
         console.log('User:', user);
         console.log('apiUrl:', apiUrl);
 
-        const response = await fetch('http://localhost:5176/users', {
+        const response = await fetch('https://jachacks2025.onrender.com/users', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
